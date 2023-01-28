@@ -1,0 +1,67 @@
+/* ------------------------ */
+@import url("reset.css");
+/* ------------------------ */
+
+* {
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(201, 201, 201);
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    padding: 0 0 25px 0;
+}
+
+.header__top {
+    color: rgb(43, 118, 135);
+    font-size: 50px;
+}
+
+span {
+    color: red;
+}
+
+#klik {
+    color: rgb(13, 0, 255);
+}
+
+div.text > p{
+    color: yellow;
+}
+
+.lesson,
+.list {
+    color: blueviolet;
+}
+
+.about p {
+    color: aqua;
+}
+
+.lesson * {
+    color: rgb(0, 255, 76);
+}
+
+.footer__container > p {
+    color: rgb(104, 10, 10);
+}
+
+[class*="__container"] {
+    text-align: center;
+}
+
+.main--title.title {
+    border: 1px solid #000;
+}
+
+.main__info .info__text {
+    border: 1px solid #000;
+}
+
+.lesson ~ div {
+    font-style: italic;
+}
