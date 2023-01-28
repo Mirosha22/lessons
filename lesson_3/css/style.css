@@ -54,10 +54,6 @@ div.text > p{
     text-align: center;
 }
 
-.text ~ p {
-    text-align: right;
-}
-
 .main--title.title {
     border: 1px solid #000;
 }
