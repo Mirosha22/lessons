@@ -3,7 +3,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    size: 14px;
+    font-size: 14px;
     line-height: 1.78;
     color: #6C757D;
 }
@@ -52,7 +52,7 @@ p {
     max-width: 1440px;
     color: #000;
     margin: 0;
-    background-color: #000;
+    background-color: #272727;
 }
 .test__container {
     max-width: 1240px;
