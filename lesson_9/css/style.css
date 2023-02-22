@@ -1,0 +1,66 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ------------------------ */
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    color: white;
+}
+[class*="__container"] {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+[class*="__title"] {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0 50px
+}
+
+[class*="__text"] {
+    padding-bottom: 20px;
+}
+.vector-icons {
+    background-color: #8d8d8d;
+    padding: 20px 0;
+}
+
+.vector-icons__icons img{
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+img {
+    vertical-align: top;
+    display: inline-block;
+    max-width: 100%;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+/* ----------------------- */
+
+.content-images {
+    color: #3056D3;
+    padding-bottom: 40px;
+}
+
+.elipse {
+    border-radius: 50%;
+}
+
+/* ------------------------ */
+
+.elements {
+    min-height: 300px;
+    color: #000;
+    font-weight: 600;
+    background: url(../img/elements_of_design/Vector15.svg) 0 100% / contain no-repeat, url(../img/elements_of_design/Vector14.svg) 100% 0 / contain no-repeat, url(../img/elements_of_design/shape.svg) 100% 100% / 200px no-repeat, url(../img/elements_of_design/Group1000001858.svg) 50% / 250px no-repeat, url(../img/elements_of_design/Dotted1.svg) 50% 100% / 100px no-repeat, url(../img/elements_of_design/DottedShape1.svg) 5px 5px / 150px no-repeat, url(../img/elements_of_design/DottedShape.svg) 99% 99% / contain no-repeat, url(../img/elements_of_design/Dotted2.svg) 30% 50% / cover no-repeat, url(../img/elements_of_design/Oval.svg) 0 100% / 200px no-repeat, url(../img/elements_of_design/Oval1.svg) 100% 0 / 150px no-repeat, #8b8b8b;
+    margin-bottom: 50px;
+}
+
