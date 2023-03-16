@@ -1,0 +1,358 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+/* ----------------------- */
+body {
+	font-family: "Inter", sans-serif;
+	background-color: #333;
+	color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+}
+.content__block {
+    padding:60px 0;
+}
+.content__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: #6f6f6f;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+.content__title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+.content__item {
+    margin-top: 60px;
+}
+/* ------------------------------ */
+.item__block-1, .item__block-2, .item__block-3, .item__block-4, .item__block-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 100px;
+}
+.item__translate, .item__scale, .item__rotate {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.7s ease 0s;
+    border-radius: 8px;
+}
+.item__translate:hover {
+    transform: translate(-20%,-50px);
+}
+.item__translate {
+    background-color: #aa000085;
+}
+.item__scale:hover {
+    transform: scale(1.7,1.2);
+}
+.item__scale {
+    background-color: #ff6a007f;
+}
+.item__rotate:hover {
+    transform: rotate(180deg);
+}
+.item__rotate {
+    background-color: #ffe6007c;
+}
+/* ------------------------------- */
+.item__block-2, .item__block-3, .item__block-4, .item__block-5 {
+    margin-top: 50px;
+}
+.item__skew, .item__matrix, .item__multi {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.7s ease 0s;
+    border-radius: 8px;
+}
+.item__skew:hover {
+    transform: skew(10deg, 10deg);
+}
+.item__skew {
+    background-color: #b3ff00aa;
+}
+.item__matrix:hover {
+    transform: matrix(1.3, 0.2, 0.2, 1.3, -50, -50);
+}
+.item__matrix {
+    background-color: #00ff2691;
+}
+.item__multi:hover {
+    transform: translate(100px,20px) scale(1.2) rotate(-90deg);
+}
+.item__multi {
+    background-color: #00ffccae;
+}
+/* -------------------------------- */
+.item__transform-origin, .item__perspective, .item__translate3D {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.7s ease 0s;
+    border-radius: 8px;
+}
+.item__transform-origin {
+    background-color: #00c8ffa3;
+    transform-origin: 0 100%;
+}
+.item__transform-origin:hover {
+    transform: rotate(-45deg);
+}
+.item__block-3 {
+    perspective-origin: center;
+	perspective: 400px;
+}
+.item__perspective {
+    background-color: #004cffb0;
+    transform: rotateX(50deg);
+}
+.item__perspective:hover {
+    transform: rotateX(0deg);
+}
+.item__translate3D:hover {
+    transform: translate3D(20px, 20px, 50px);
+}
+.item__translate3D {
+    background-color: #6200ffd0;
+}
+/* --------------------------------- */
+.item__scale3D, .item__rotate3D, .item__matrix3d {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.7s ease 0s;
+    border-radius: 8px;
+}
+.item__block-4 {
+    perspective: 1000px;
+}
+.item__scale3D:hover {
+    transform: scale3d(1.5, 1.5, 1.2);
+}
+.item__scale3D {
+    background-color: #ae00ffd0;
+}
+.item__rotate3D:hover {
+    transform: rotate3d(1, 1, 1, -90deg);
+}
+.item__rotate3D {
+    background-color: #ff00f7d0;
+}
+.item__matrix3d:hover {
+    transform: matrix3d(0.48,0.77,-0.87,0,-0.77,0.7392000000000001,0.64,0,0.87,-0.64,0.385,0,0,0,40,1);
+    -webkit-transform: matrix3d(0.48,0.77,-0.87,0,-0.77,0.7392000000000001,0.64,0,0.87,-0.64,0.385,0,0,0,40,1);
+}
+.item__matrix3d {
+    background-color: #ff0037dc;
+    transform-origin: center center 0px; 
+}
+/* ------------------------------ */
+.item__multi3D, .item__transform-style, .item__backface-visibility {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.7s ease 0s;
+    border-radius: 8px;
+}
+.item__block-5 {
+    perspective: 800px;
+	transform-style: preserve-3d;
+}
+.item__multi3D:hover {
+    transform: translate3d(-80px, -60px, 20px) rotate3d(1.3, 1.8, 1.5, 80deg);
+}
+.item__multi3D {
+    background-color: coral;
+}
+.item__transform-style:hover {
+    transform: rotateX(70deg);
+}
+.item__transform-style {
+    background-color: chocolate;
+}
+.item__backface-visibility {
+
+}
+.flip {
+	perspective: 500px;
+	transform-style: preserve-3d;
+}
+.flip__body {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	transition: all 0.8s ease 0s;
+	transform-style: preserve-3d;
+}
+.flip__front,
+.flip__back {
+	position: absolute;
+    border-radius: 8px;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flip__front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background-color: #77608d;
+
+	backface-visibility: hidden;
+}
+.flip__back {
+	transform: rotateY(-180deg);
+	background-color: rgba(121, 79, 69, 0.5);
+}
+.flip:hover .flip__body {
+	transform: rotateY(-180deg);
+}
+/* ----------------------------------------- */
+.car__container {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1470px;
+}
+.car__block {
+    position: absolute;
+}
+.car__body {
+    background: url(../img/car.png) 0 0 / 100% no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    width: 900px;
+    height: 500px;
+    z-index: 10;
+}
+.car__background-wheel1 {
+    background-color: #000;
+    position: absolute;
+    top: 345px;
+    left: 105px;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    z-index: 15;
+}
+.car__wheel-left {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 135px;
+    height: 135px;
+    z-index: 20;
+    transition: all 2s;
+}
+.car__background-wheel2 {
+    background-color: #000;
+    position: absolute;
+    top: 345px;
+    left: 625px;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    z-index: 15;
+}
+.car__wheel-right {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 135px;
+    height: 135px;
+    z-index: 20;
+    transition: all 2s ease;
+}
+.car__body:hover .car__background-wheel1 img {
+    transform: rotate(-2360deg);
+}
+.car__body:hover .car__background-wheel2 img {
+    transform: rotate(-2190deg);
+}
+.car__light {
+    position: absolute;
+    background: url(../img/light.png) 0 0 / 100% no-repeat;
+    top: -15px;
+    left: -200px;
+    width: 545px;
+    height: 720px;
+    z-index: 5;
+    transform: rotate(90deg);
+    opacity: 0;
+    visibility: hidden; 
+    transition: all 0.9s ease;
+}
+.car__block:hover .car__light {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-30px, 10px) rotate(90deg);
+}
+.car__logo {
+    position: absolute;
+    background: url(../img/logo.png) 0 0 / 100% no-repeat;
+    width: 400px;
+    height: 400px;
+    top: 0px;
+    right: -1300px;
+    transition: all 0.9s ease;
+}
+.car__block:hover .car__logo {
+    transform: scale(-1, 1); 
+}
+.car__exhaust img {
+    position: absolute;
+    top: 245px;
+    left: 835px;
+    width: 350px;
+    height: 300px;
+    z-index: 15;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.8s ease;
+    transform-origin: left;
+}
+.car__body:hover .car__exhaust img {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.2);
+}
+.car__label {
+    position: absolute;
+    background: url(../img/amg.png) 0 0 / 100% no-repeat;
+    width: 600px;
+    height: 400px;
+    top: -200px;
+    right: -700px;
+    transition: all 0.9s ease;
+}
+.car__block:hover .car__label {
+    transform: scale(1.2) rotate(-10deg);
+}
