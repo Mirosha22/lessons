@@ -1,0 +1,159 @@
+@import url("reset.css");
+/* -------------------- */
+
+.wrapper {
+    overflow: clip;
+    height: 100%;
+}
+
+.car__animation {
+}
+.car__container {
+    margin: 0 auto;
+    max-width: 1600px;
+    max-height: 730px;
+}
+.car__background {
+    min-height: 100%;
+    width: 100%;
+}
+.bcg {
+}
+.bcg__sky {
+    background: url(../img/pngwing.com.png) center / cover no-repeat;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.bcg__city {
+    background: url(../img/city.png) center / cover no-repeat;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    z-index: 2;
+    top: -575px;
+}
+.bcg__road {
+    background: url(../img/road.png) center / cover no-repeat;
+    width: 2540px;
+    height: 300px;
+    position: relative;
+    z-index: 3;
+    top: -770px;
+    right: 1000px;
+    animation: road 1s linear infinite normal running 1s ; 
+}
+@keyframes road {
+    0% {
+        transform: translate(0%, 0px);
+    }
+    100% {
+        transform: translate(1000px, 0px);
+    }
+}
+
+.car__block {
+    position: absolute;
+}
+.car__body {
+    background: url(../img/car.png) 0 0 / 100% no-repeat;
+    position: absolute;
+    top: -1280px;
+    left: 200px;
+    width: 900px;
+    height: 500px;
+    z-index: 10;
+    animation: car 4s linear infinite reverse running 1s ; 
+}
+@keyframes car {
+    0% {
+        transform: translate(-1500px, 0px);
+    }
+    30% {
+		transform: translate(200px, 0px) rotate(10deg);
+	}
+	50% {
+		transform: translate(200px, 0px);
+	}
+    100% {
+        transform: translate(1500px, 0px);
+    }
+}
+.car__background-wheel1 {
+    background-color: #000;
+    position: absolute;
+    top: 345px;
+    left: 105px;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    z-index: 15;
+}
+.car__wheel-left {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 135px;
+    height: 135px;
+    z-index: 20;
+    animation: wheel 1s linear infinite reverse running 0s ; 
+}
+@keyframes wheel {
+	0% {
+		transform: rotate(0deg);
+	}
+	30% {
+		transform: rotate(350deg);
+	}
+	50% {
+		transform: rotate(1200deg);
+	}
+	100% {
+		transform: rotate(3360deg);
+	}
+}
+.car__background-wheel2 {
+    background-color: #000;
+    position: absolute;
+    top: 345px;
+    left: 625px;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    z-index: 15;
+}
+.car__wheel-right {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 135px;
+    height: 135px;
+    z-index: 20;
+    animation: wheel 1s linear infinite reverse running 0s ; 
+}
+
+.car__exhaust img {
+    position: absolute;
+    top: 245px;
+    left: 835px;
+    width: 350px;
+    height: 300px;
+    z-index: 15;
+    transform-origin: left;
+    animation: exhaust 4s ease infinite normal running 0s ;
+}
+@keyframes exhaust {
+	0% {
+        transform: scale(1.8);
+	}
+	30% {
+		transform: scale(1.3);
+	}
+	50% {
+		transform: scale(2.6) rotate(-30deg);
+	}
+	100% {
+		transform: scale(1.9);
+	}
+}
+
