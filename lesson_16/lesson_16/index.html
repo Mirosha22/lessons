@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 16</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header></header>
+        <main class="page">
+            <div class="page__body">
+                <div class="page__container">
+                    <div class="page__header">
+                        <div class="page__title title">Checkout</div>
+                        <div class="page__sub-title">There are 3 products in your cart</div>
+                    </div>
+                    <div class="page__form form">
+                        <div class="form__title title">
+                            Billing Details
+                        </div>
+                        <form class="form__wrapper" method="GET" enctype="multipart/form-data" action="#">
+                            <div class="form__table">
+                                <div class="form__line">
+                                    <input class="form__input" type="text" name="username" placeholder="First name*" required>
+                                </div>
+                                <div class="form__line">
+                                    <input class="form__input" type="text" name="last-name" placeholder="Last name*" required>
+                                </div>
+                                <div class="form__line">
+                                    <input class="form__input" type="text" name="address" placeholder="Address*" required>
+                                </div>
+                                <div class="form__line">
+                                    <input class="form__input" type="text" name="address" placeholder="Address line 2" >
+                                </div>
+                                <div class="form__line form__line-element">
+                                    <select required id="list-01" class="form__list" name="country">
+                                        <option class="form__option" value="">Country*</option>
+                                        <option class="form__option" value="">Ukraine</option>
+                                        <option class="form__option" value="">Italia</option>
+                                        <option class="form__option" value="">Polska</option>
+                                        <option class="form__option" value="">España</option>
+                                        <option class="form__option" value="">Schweiz</option>
+                                        <option class="form__option" value="">France</option>
+                                        <option class="form__option" value="">Deutschland</option>
+                                    </select>
+                                </div>
+                                <div class="form__line">
+                                    <input class="form__input" type="text" name="city" placeholder="City/Town*"  required>
+                                </div>
+                                <div class="form__line">
+                                    <input class="form__input" type="number" name="postcode" placeholder="Postcode / ZIP*"  required>
+                                </div>
+                                <div class="form__line">
+                                    <input class="form__input" type="tel" name="number-phone" placeholder="Phone*"  required>
+                                </div>
+                                <div class="form__line">
+                                    <input class="form__input" type="number" name="postcode" placeholder="Postcode / ZIP*"  required>
+                                </div>
+                                <div class="form__line">
+                                    <input class="form__input" type="tel" name="number-phone" placeholder="Phone*"  required>
+                                </div>
+                                <div class="form__line form__line-widht">
+                                    <textarea class="form__area" autocomplete="off" name="message" placeholder="Additional information"></textarea>
+                                </div>
+                            </div>
+                            <div class="form__checkbox checkbox">
+                                <div class="checkbox__line">
+                                    <input id="account-01" class="checkbox__input" name="account" type="checkbox">
+                                    <label class="checkbox__label" for="account-01">Create Account</label>
+                                </div>
+                                <div class="checkbox__line">
+                                    <input id="address-01" class="checkbox__input" name="account" type="checkbox">
+                                    <label class="checkbox__label" for="address-01">Ship to a different address?</label>
+                                </div>
+                            </div>
+                            <div class="form__apply apply">
+                                <div class="apply__title">Apply Coupon to get discount!</div>
+                                <div class="apply__wrapp">
+                                    <div class="apply__line">
+                                        <input id="coupon-01" class="apply__input" autocomplete="off" name="coupon" type="text" placeholder="Coupon code">
+                                    </div>
+                                    <div class="apply__control">
+                                        <button class="apply__button" type="submit">Apply Code</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="page__shipping shipping">
+                        <form action="#" class="shipping__form" method="GET" enctype="multipart/form-data">
+                            <h2 class="shipping__title">Shipping Address</h2>
+                            <div class="shipping__table">
+                                <div class="shipping__line">
+                                    <label class="shipping__label" for="email-01">
+                                        Email Address <span class="shipping__span">*</span>
+                                    </label>
+                                    <input required class="shipping__input" id="email-01" placeholder="roni_cost@example.com" name="mail" type="email">
+                                </div>
+                                <div class="shipping__line">
+                                    <label class="shipping__label" for="password-01">
+                                        Password
+                                    </label>
+                                    <input class="shipping__input" id="password-01" placeholder="******************" name="password" type="password">
+                                </div>
+                                <div class="shipping__line">
+                                    <label class="shipping__label" for="zip-01">
+                                        Zip/Postal Code
+                                    </label>
+                                    <input class="shipping__input" id="zip-01" name="zip" type="text">
+                                </div>
+                            </div>
+                            <div class="shipping__text">
+                                <p>You already have an account with us. <a href="#" class="link-sign">Sign in</a> or continue as guest.</p>
+                            </div>
+                            <div class="shipping__block">
+                                <button class="shipping__button" type="submit">login</button>
+                                <div class="shipping__link link">
+                                    <a href="#" class="link__password">Forgot Your Password?</a>
+                                </div>
+                            </div>
+                            <div class="shipping__stripe shipping__stripe-margin"></div>
+                            <div class="shipping__table">
+                                <div class="shipping__line">
+                                    <label class="shipping__label" for="f-name-01">
+                                        First Name <span class="shipping__span">*</span>
+                                    </label>
+                                    <input required class="shipping__input" id="f-name-01" name="f-name" type="text">
+                                </div>
+                                <div class="shipping__line">
+                                    <label class="shipping__label" for="l-name-01">
+                                        Last Name <span class="shipping__span">*</span>
+                                    </label>
+                                    <input required class="shipping__input" id="l-name-01" name="l-name" type="text">
+                                </div>
+                                <div class="shipping__line">
+                                    <label class="shipping__label" for="company-01">
+                                        Company
+                                    </label>
+                                    <input class="shipping__input" id="company-01" name="company" type="text">
+                                </div>
+                                <div class="shipping__line">
+                                    <label class="shipping__label" for="address-02">
+                                        Street Address <span class="shipping__span">*</span>
+                                    </label>
+                                    <div class="shipping__wrapper">
+                                        <input required class="shipping__input" id="address-02" name="address" type="text">
+                                        <input required class="shipping__input" id="address-03" name="address" type="text">
+                                        <input required class="shipping__input" id="address-04" name="address" type="text">
+                                    </div>
+                                </div>
+                                <div class="shipping__line">
+                                    <label class="shipping__label" for="country-01">
+                                        Country <span class="shipping__span">*</span>
+                                    </label>
+                                    <input required class="shipping__input" id="country-01" name="country" type="text">
+                                </div>
+                                <div class="shipping__line shipping__line-row">
+                                    <label class="shipping__label" for="state-01">
+                                        State/Province <span class="shipping__span">*</span>
+                                    </label>
+                                    <select required id="state-01" class="shipping__list" name="state">
+                                        <option class="shipping__option" value="">Please select a region, state or province</option>
+                                        <option class="shipping__option" value="">Arizona</option>
+                                        <option class="shipping__option" value="">Virginia</option>
+                                        <option class="shipping__option" value="">Delaware</option>
+                                        <option class="shipping__option" value="">California</option>
+                                        <option class="shipping__option" value="">Kansas</option>
+                                        <option class="shipping__option" value="">Kentucky</option>
+                                        <option class="shipping__option" value="">Michigan</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <h2 class="shipping__title">Shipping Methods</h2>
+                            <div class="shipping__stripe"></div>
+                            <div class="shipping__radio radio">
+                                <div class="radio__body">
+                                    <div class="radio__wrapp">
+                                        <input checked class="radio__input" id="price-01" required value="mers" name="brand" type="radio">
+                                        <label class="radio__label" for="price-01">$5.00</label>
+                                    </div>
+                                    <div class="radio__items">
+                                        <div class="radio__item">Fixed</div>
+                                        <div class="radio__item">Flat Rate</div>
+                                    </div>
+                                </div>
+                                <div class="shipping__strip"></div>
+                                <div class="radio__body">
+                                    <div class="radio__wrapp">
+                                        <input class="radio__input" id="price-02" required name="brand" value="BMW" type="radio">
+                                        <label class="radio__label" for="price-02">$10.00</label>
+                                    </div>
+                                    <div class="radio__items">
+                                        <div class="radio__item">Table Rate</div>
+                                        <div class="radio__item">Best Way</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shipping__buttons">
+                                <button class="shipping__button" type="submit">next</button>
+                                <button class="shipping__btn" type="reset">Back</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
