@@ -62,7 +62,7 @@
                                 <div class="form__line">
                                     <input class="form__input" type="tel" name="number-phone" placeholder="Phone*"  required>
                                 </div>
-                                <div class="form__line">
+                                <div class="form__line form__line-widht">
                                     <textarea class="form__area" autocomplete="off" name="message" placeholder="Additional information"></textarea>
                                 </div>
                             </div>
@@ -78,11 +78,13 @@
                             </div>
                             <div class="form__apply apply">
                                 <div class="apply__title">Apply Coupon to get discount!</div>
-                                <div class="apply__line">
-                                    <input id="coupon-01" class="apply__input" autocomplete="off" name="coupon" type="text" placeholder="Coupon code">
-                                </div>
-                                <div class="apply__control">
-                                    <button class="apply__button" type="submit">Apply Code</button>
+                                <div class="apply__wrapp">
+                                    <div class="apply__line">
+                                        <input id="coupon-01" class="apply__input" autocomplete="off" name="coupon" type="text" placeholder="Coupon code">
+                                    </div>
+                                    <div class="apply__control">
+                                        <button class="apply__button" type="submit">Apply Code</button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -155,7 +157,7 @@
                                     </label>
                                     <input required class="shipping__input" id="country-01" name="country" type="text">
                                 </div>
-                                <div class="shipping__line">
+                                <div class="shipping__line shipping__line-row">
                                     <label class="shipping__label" for="state-01">
                                         State/Province <span class="shipping__span">*</span>
                                     </label>
