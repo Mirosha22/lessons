@@ -988,13 +988,19 @@ $grayColor4: #BDBDBD;
         text-transform: uppercase;
         border: 2px solid #000000;
         padding: 14px 45.84px;
+        transition: all 0.3s;
     }
 }
 .offer--margin {
     margin-bottom: 80px;
 }
 /*-------------------------------*/
-@media (any-hover: hover){}
+@media (any-hover: hover){
+    .offer__button:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
 @media (max-width: 1572px) {
     .offer__title {
         font-size: 38px;
